@@ -32,3 +32,34 @@ console.log("hello world");
 
 
 console.log(typeof myfunction)
+
+
+
+// ------------------------------------------------------------
+// memory allocation
+
+// stack(Primitive)    ,     Heap(non-primitive)
+
+let username = "rachana"
+
+let anotherusername = username 
+
+anotherusername = "rachanachauhan";
+
+console.log(username);
+console.log(anotherusername);
+
+
+
+let userOne = {
+    email:"rach@gmail.com",
+    upi:"user@google.com"
+}
+
+
+let userTwo = userOne;
+
+userTwo.email = "rachana@gmail.com";
+
+console.log(userOne.email)
+console.log(userTwo.email);
